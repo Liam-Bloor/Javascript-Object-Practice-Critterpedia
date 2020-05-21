@@ -1,0 +1,41 @@
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<main>
+  <nav id = "navbar">
+    <div id = "title">
+    <h1>Critterpedia</h1>
+    </div>
+    <div id = "link-box">
+      <a class = "nav-links" href = "#content-box">Critters</a>
+      <a class = "nav-links" href = "#input">Contribute</a>
+    </div>
+  </nav>
+  <div id = "content-box">
+    <section id = "desc">
+      <p>This is a website dedicated to recording data about species, If you find another one you can add it at the bottom of the page</p>
+    </section>
+    <section id = "critters">
+      <div id = "grid">
+   
+      </div>
+    </section>
+  </div>
+  <form method = "post" id = "input">
+    <h2>Enter a new species here!</h2>
+    
+    <label class = padding>Enter the species name:</label>
+    <input id = "name" type = "text" required placeholder = "Add Name Here">
+    
+    <label class = padding>Enter an image URL (link):</label>
+    <input id = "image" type = "url" required placeholder = "Add URL Here">
+    <label  class = more-padding>Enter number of legs, wings and eyes: </label>
+    <div id = "numbers">
+        
+        <input id = "legs" required type = "number" min = "0" max = "100" placeholder= "Number of Legs"</input>
+        <input id = "wings" required type = "number" min = "0" max = "10" placeholder= "Number of Wings"</input>
+        <input id = "eyes" required type = "number" placeholder= "Number of Eyes"</input>
+    </div>
+    <label id = "comments-label" class = padding>Enter a short description of the species: </label>
+    <textarea id = "descr" required maxlength = "300" rows = "4" type= "text" placeholder= "Add a Decription of the Species Here" class = padding></textarea>
+    <button id = "submit" class = "button" type = "button">Submit Critter</button>
+  </form>
+</main>

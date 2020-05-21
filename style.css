@@ -1,0 +1,141 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  color: black;
+    <!--text-shadow: 2px 2px 1px #1f1f1f;
+  font-family: "Balsamiq Sans";
+  background-color: #35ff8d;
+  background: repeating-linear-gradient(
+  45deg,
+  #35ff8d,
+  #35ff8d 10vmax,
+  #5ee699 10vmax,
+  #5ee699 20vmax
+);
+}
+
+#navbar{
+  top: 0;
+  height: 3vmax;
+  width: 100vmax;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: #5ee699;
+  border-bottom: solid 0.1vmax black;
+}
+#title{
+  font-size: 1.5vmax;
+}
+#link-box{
+  height: 100%;
+  width: 10vmax;
+  display: flex;
+  align-items: center;
+}
+.nav-links{
+  height: 100%;
+  padding-left: 1vmax;
+  padding-right: 1vmax;
+  text-decoration: none;
+  font-size: 1.2vmax;
+  margin-left: 3vmax;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+ .nav-links:hover{
+  background-color: #03a19e;
+  border-left: solid 0.1vmax black;
+  border-right: solid 0.1vmax black;
+  padding-left: 0.9vmax;
+  padding-right: 0.9vmax;
+}
+#content-box{
+  padding-top: 3vmax;
+}
+#desc{
+  height: 4vmax;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5vmax;
+}
+#grid{
+  width 100%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 20vmax 20vmax 20vmax;
+  margin-left: -3vmax;<!-- off set the padding of the boxes-->
+}
+.box{
+  width: 20vw;
+  text-align: center;
+  padding: 0.5vmax;
+  border: 0.5vmax dotted white;
+  margin-bottom: 2vmax;
+}
+.name{
+ 
+}
+p{
+  
+}
+.image{
+  width: 20vmax;
+  height: 10vmax;
+}
+.description{
+  
+}
+.padding{
+  padding: 1vmax;
+}
+.more-padding{
+  margin: 2vmax;
+}
+input{
+  background-color: #5ee699;
+  font-color: black;
+  border: 0.1vmax solid black;
+  border-radius: 0.8vmax;
+  padding: 0.5vmax;
+  width: 30vmax;
+}
+input:focus{
+  outline: none;
+  border-color: white;
+}
+input[type = number]{
+  width: 9vmax;
+}
+textarea{
+  resize: none;
+  background-color: #5ee699;
+  font-color: black;
+  border: 0.1vmax solid black;
+  border-radius: 0.8vmax;
+  padding: 0.5vmax;
+  width: 29vmax;
+  margin-bottom: 1vmax;
+}
+textarea:focus{
+  outline: none;
+  border-color: white;
+}
+.button{
+  background-color: #5ee699;
+  border: 0.2vmax double black;
+  margin-bottom: 1vmax;
+}
+#input{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: -3vmax;
+  padding-top: 3vmax;
+  font-size: 1vmax;
+}
