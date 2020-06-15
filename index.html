@@ -1,4 +1,10 @@
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+
+<head>
+    <link rel = "stylesheet" href = "style.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+
 <main>
   <nav id = "navbar">
     <div id = "title">
@@ -15,21 +21,21 @@
     </section>
     <section id = "critters">
       <div id = "grid">
-   
+
       </div>
     </section>
   </div>
   <form method = "post" id = "input">
     <h2>Enter a new species here!</h2>
-    
+
     <label class = padding>Enter the species name:</label>
     <input id = "name" type = "text" required placeholder = "Add Name Here">
-    
+
     <label class = padding>Enter an image URL (link):</label>
     <input id = "image" type = "url" required placeholder = "Add URL Here">
     <label  class = more-padding>Enter number of legs, wings and eyes: </label>
     <div id = "numbers">
-        
+
         <input id = "legs" required type = "number" min = "0" max = "100" placeholder= "Number of Legs"</input>
         <input id = "wings" required type = "number" min = "0" max = "10" placeholder= "Number of Wings"</input>
         <input id = "eyes" required type = "number" placeholder= "Number of Eyes"</input>
@@ -38,4 +44,7 @@
     <textarea id = "descr" required maxlength = "300" rows = "4" type= "text" placeholder= "Add a Decription of the Species Here" class = padding></textarea>
     <button id = "submit" class = "button" type = "button">Submit Critter</button>
   </form>
+  <head>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
 </main>
