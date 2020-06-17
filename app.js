@@ -4,7 +4,7 @@ var critters = [
     legs: 8,
     wings: 0,
     eyes: 8,
-    image: "https://scx2.b-cdn.net/gfx/news/hires/2019/spider.jpg",
+    image: "spider.jpg", // source: https://scx2.b-cdn.net/gfx/news/hires/2019/spider.jpg
     description: "Spiders are air-breathing arthropods that have eight legs, chelicerae with fangs able to inject venom, and spinnerets that extrude silk. They are the largest order of arachnids and rank seventh in total species diversity among all orders of organisms."
   },
   dragonfly = {
@@ -12,7 +12,7 @@ var critters = [
     legs: 6,
     wings: 4,
     eyes: 2,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sympetrum_flaveolum_-_side_%28aka%29.jpg/1920px-Sympetrum_flaveolum_-_side_%28aka%29.jpg",
+    image: "dragonfly.jpg", // source: https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sympetrum_flaveolum_-_side_%28aka%29.jpg/1920px-Sympetrum_flaveolum_-_side_%28aka%29.jpg
     description: "A dragonfly is an insect belonging to the order Odonata, infraorder Anisoptera. Adult dragonflies are characterized by large, multifaceted eyes, two pairs of strong, transparent wings, sometimes with coloured patches, and an elongated body."
   },
    pondskater = {
@@ -20,7 +20,7 @@ var critters = [
     legs: 6,
     wings: 0,
     eyes: 2,
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/40/Gerris_by_webrunner.JPG",
+    image: "pondskater.jpg", // source: https://upload.wikimedia.org/wikipedia/commons/4/40/Gerris_by_webrunner.JPG
     description: "The Gerridae are a family of insects in the order Hemiptera, commonly known as water striders, water skeeters, water skooters, water bugs, pond skaters, water skippers, or Jesus bugs."
   },
    butterfly = {
@@ -28,7 +28,7 @@ var critters = [
     legs: 6,
     wings: 4,
     eyes: 12000,
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Fesoj_-_Papilio_machaon_%28by%29.jpg",
+    image: "butterfly.jpg", // source = https://upload.wikimedia.org/wikipedia/commons/3/3d/Fesoj_-_Papilio_machaon_%28by%29.jpg
     description: "Butterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. Adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight."
   }
 ];
@@ -60,7 +60,7 @@ document.getElementById("submit").onclick = function() {
   var inputWings = document.getElementById("wings");
   var inputEyes= document.getElementById("eyes");
   var inputDescr = document.getElementById("descr");
-  
+
   var newObjName = inputName.value.toLowerCase().replace(/\s/g, '');
   var newObj = {
     name: inputName.value,
@@ -70,7 +70,7 @@ document.getElementById("submit").onclick = function() {
     image: inputImage.value,
     description: inputDescr.value
   }
-  if(newObj.name !== "" && newObj.legs !== "" && newObj.wings !== "" && 
+  if(newObj.name !== "" && newObj.legs !== "" && newObj.wings !== "" &&
     newObj.eyes !== "" && newObj.image !== "" && newObj.description !== ""){
     critters.push(newObj);
     buildBoxes();
@@ -79,4 +79,3 @@ document.getElementById("submit").onclick = function() {
     alert("You have missing fields!");
   }
 }
-
